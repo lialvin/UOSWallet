@@ -69,48 +69,4 @@ Just using this command to install:
 
 <h2 id="3">Wallet Functions/钱包功能</h2>
 
-### Settings/设置
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/setting.PNG)
-
-### Create a wallet/创建钱包
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/wallet.PNG)
-
-### Create & import a private key/创建和导入私钥
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/ImportKey.PNG)
-
-### Lock or Unlock a wallet/锁定和解锁钱包
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/UnlockWallet.PNG)
-
-
-<h2 id="4">Account Functions/账号功能</h2>
-
-### Create account/创建账号
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/account.PNG)
-
-### Get Account Status/账号状态
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/GetAccount.PNG)
-
-### Get Account History/账号交易历史
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/GetTransaction.PNG)
-
-### Get Account Servants/账号子集
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/GetServants.PNG)
-
-
-
-<h2 id="5">Contract Functions/合约功能</h2>
-
-### Send a transaction/发起合约调用
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/Push.PNG)
-
-### Get data table of a contract/查看合约数据表
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/GetTable.PNG)
-
-
-<h2 id="6">Transaction Checker/交易核查</h2>
-
-### 根据交易原文和签名，验证链上某交易是否成立/Using the action message with its signature,we can check if a transaction is signed by the owener of a given public key. 
-![](https://github.com/lialvin/UOSWallet/raw/master/screenshots/Checker.PNG)
-
-
 
