@@ -1,6 +1,6 @@
 # About/关于
 
-**UOSWallet** is a cross-platform UOS PC wallet tool,which is developed by alvin.
+**UosDevTool** is a cross-platform UOS PC wallet tool,which is developed by alvin.
 
   
 -------------------------------
@@ -13,9 +13,9 @@
 
 <h2 id="1">Overview/简介</h2>
 
-&emsp;&emsp;The UOSWallet program is a light weighted wallet build on UOSIO ecology. It provides private basic key store with encryptions, signature, validation functions, and etc. Developers can use this tool connect the UOSIO testnet, and test the wallet/account/contracts interface in a more convenient way.
+&emsp;&emsp;The UosDevTool program is a light weighted wallet build on UOSIO ecology. It provides private basic key store with encryptions, signature, validation functions, and etc. Developers can use this tool connect the UOSIO testnet, and test the wallet/account/contracts interface in a more convenient way.
 
-&emsp;&emsp;UOSWallet是一个建立在UOSIO生态上的钱包工具。它提供了基础的钱包功能，包含了私钥加密管理、签名校验模块。开发者可以使用UOS开发助手连接UOSIO网络，更便捷地对钱包、账号、合约接口等进行开发和测试。
+&emsp;&emsp;UosDevTool是一个建立在UOSIO生态上的钱包工具。它提供了基础的钱包功能，包含了私钥加密管理、签名校验模块。开发者可以使用UOS开发助手连接UOSIO网络，更便捷地对钱包、账号、合约接口等进行开发和测试。
 
 
 ------------------------------
@@ -28,9 +28,9 @@
 &emsp;1. install [QT](https://www.qt.io/download) >= 5.8
 
 &emsp;2. download our git repository.
->`git clone --recurse-submodules https://github.com/lialvin/UOSWallet.git`
+>`git clone --recurse-submodules https://github.com/lialvin/UosDevTool.git`
 
-&emsp;3. open Qt Creator and choose "Open Project", select the "src/UOSWallet.pro" and open
+&emsp;3. open Qt Creator and choose "Open Project", select the "src/UosDevTool.pro" and open
 
 &emsp;4. select Build from QT menu and Run it.
 

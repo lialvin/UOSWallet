@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>UOSWallet</string>
+   <string>UosDevTool</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(32, 32, 32);
