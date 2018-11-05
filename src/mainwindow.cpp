@@ -37,8 +37,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 void MainWindow::InitUI()
 {
-    //ui->tabWidget->setTabPosition(QTabWidget::West);
-    //ui->tabWidget->tabBar()->setStyle(std::move(new CustomTabStyle));
+    ui->tabWidget->setTabPosition(QTabWidget::West);
+    ui->tabWidget->tabBar()->setStyle(std::move(new CustomTabStyle));
 
     auto walletHLayout = new QHBoxLayout(ui->tabWallet);
     walletHLayout->addWidget(std::move(new WalletFrame(ui->tabWallet)));
@@ -64,8 +64,8 @@ void MainWindow::InitUI()
     auto settingLayout = new QHBoxLayout(ui->tabSettings);
     settingLayout->addWidget(std::move(new SettingsFrame(ui->tabSettings)));
 
-    //about = new AboutFrame(this);
-    //updateAbout();
+    about = new AboutFrame(this);
+    updateAbout();
 }
 
 void MainWindow::updateAbout()
