@@ -30,7 +30,7 @@ public:
 
     bool importKey(const uos_key& key);
     bool importKey(const QString& wif);
-
+    bool  newKey();
     void lock();
     void unlock(const QString& password);
 

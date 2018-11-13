@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>430</width>
+    <width>613</width>
     <height>80</height>
    </rect>
   </property>
@@ -127,6 +127,30 @@ border-radius: 4px;</string>
        </property>
        <property name="text">
         <string>Import key</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonNewKey">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95, 94, 94);
+border-radius: 4px;</string>
+       </property>
+       <property name="text">
+        <string>NewKey</string>
        </property>
       </widget>
      </item>

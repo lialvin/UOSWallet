@@ -81,6 +81,14 @@ bool UOSWallet::importKey(const uos_key &key)
     return false;
 }
 
+bool  UOSWallet::newKey()
+{
+    uos_key  newkey;
+    QString qstr = QString::fromStdString(newkey.get_wif_private_key());
+    importKey( qstr);
+    return true;
+}
+
 bool UOSWallet::importKey(const QString &wif)
 {
     if (isLocked() || wif.isEmpty()) {
@@ -105,6 +113,7 @@ bool UOSWallet::importKey(const QString &wif)
 
 void UOSWallet::lock()
 {
+
     if (isLocked()) {
         return;
     }

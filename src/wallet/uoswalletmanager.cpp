@@ -98,6 +98,7 @@ bool UOSWalletManager::isLocked(const QString &name)
 
 void UOSWalletManager::lockAll()
 {
+    //return;
     for (auto& item : wallets) {
         if (!item.isLocked()) {
             item.lock();
@@ -111,7 +112,7 @@ void UOSWalletManager::lock(const QString &name)
         // wallet not found, should never be here!
         return;
     }
-
+    //return;
     auto& wallet = wallets[name];
     if (!wallet.isLocked()) {
         wallet.lock();
@@ -121,7 +122,7 @@ void UOSWalletManager::lock(const QString &name)
 void UOSWalletManager::unlock(const QString &name, const QString &password)
 {
     if (wallets.find(name) == wallets.end()) {
-        // wallet not found, should never be here!
+        // wallet not found, should never be here!        
         return;
     }
 
@@ -145,6 +146,23 @@ void UOSWalletManager::importKey(const QString &name, const QString &wif)
 
     if (!wallet.importKey(wif)) {
         QMessageBox::warning(nullptr, "Error", "Import key failed!");
+    }
+}
+
+void UOSWalletManager::newKey( const QString &name)
+{
+    if (wallets.find(name) == wallets.end()) {
+        return;
+    }
+
+    auto& wallet = wallets[name];
+    if (wallet.isLocked()) {
+        // wallet is locked, nothing we can do.
+        return;
+    }
+
+    if (!wallet.newKey()) {
+        QMessageBox::warning(nullptr, "Error", "new key failed!");
     }
 }
 

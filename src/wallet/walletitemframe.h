@@ -23,6 +23,8 @@ private slots:
 
     void on_pushButtonLock_clicked();
 
+    void on_pushButtonNewKey_clicked();
+
 private:
     Ui::WalletItemFrame *ui;
 

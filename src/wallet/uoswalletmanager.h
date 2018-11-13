@@ -36,7 +36,7 @@ public:
     void unlock(const QString& name, const QString& password);
 
     void importKey(const QString& name, const QString& wif);
-
+    void  newKey(const QString &name );
     QMap<QString, UOSWallet> listKeys(wallet_state state);
     QVector<QPair<QString, bool>> listWallets(wallet_state state);
 

@@ -58,3 +58,12 @@ void WalletItemFrame::on_pushButtonLock_clicked()
     locked = UOSWalletManager::instance().isLocked(ui->labelWalletName->text());
     setLockState(locked);
 }
+
+void WalletItemFrame::on_pushButtonNewKey_clicked()
+{
+    if (this->locked) {
+        QMessageBox::warning(nullptr, "Error", "Wallet must be unlocked before new keys.");
+        return;
+    }
+    UOSWalletManager::instance().newKey(ui->labelWalletName->text());
+}
